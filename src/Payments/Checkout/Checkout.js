@@ -40,6 +40,9 @@ const Checkout = () => {
           : result.error.message,
         is: true,
       });
+      setTimeout(() => {
+        window.location.href = window.location.origin + "/error_confirmation";
+      }, 1000);
     } else {
       setError({
         message: "",
@@ -70,6 +73,12 @@ const Checkout = () => {
                 Please select your payment method and provide a bank/card
                 information to complete the purchase.
               </i>
+            </p>
+            <br />
+            <p style={{ color: "#898989", fontSize: 13 }}>
+              <strong>Demo Card: </strong>
+              <i>4242 4242 4242 4242 (Visa)</i>{" "}
+              <strong>You can use any Expiration and CVV</strong>
             </p>
           </div>
           <div className="col-md-6">

@@ -67,7 +67,7 @@ const Home = () => {
   };
   return (
     <div style={{ textAlign: "center" }}>
-      <h1>Paypal Checkout Page</h1>
+      <h3 className="text-muted mb-4 mt-2">Paypal & Stripe Checkout Page</h3>
       <button onClick={paymentGateway} className="stripe_pay_button">
         Pay with PayPal
       </button>
