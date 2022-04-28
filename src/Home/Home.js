@@ -68,11 +68,15 @@ const Home = () => {
   return (
     <div style={{ textAlign: "center" }}>
       <h1>Paypal Checkout Page</h1>
-      <button onClick={paymentGateway}>Pay with PayPal</button>
+      <button onClick={paymentGateway} className="stripe_pay_button">
+        Pay with PayPal
+      </button>
       <PayPalPayment paymentRef={paymentRef} />
 
       <br />
-      <button onClick={handleStripePayment}>Pay 10$ with Card</button>
+      <button onClick={handleStripePayment} className="stripe_pay_button">
+        Pay 10$ with Card
+      </button>
     </div>
   );
 };

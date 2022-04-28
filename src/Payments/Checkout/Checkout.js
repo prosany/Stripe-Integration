@@ -62,13 +62,13 @@ const Checkout = () => {
             >
               You're Paying For -
             </h6>
-            <h5>ABC Subscription</h5>
-            <h6>Amount You're Paying Now €9.95</h6>
+            <h5>ABC Product</h5>
+            <h6>Amount You're Paying Now $10.00</h6>
             <p style={{ color: "#898989", fontSize: 13 }}>
               <strong>Note: </strong>
               <i>
                 Please select your payment method and provide a bank/card
-                information to complete the subscription.
+                information to complete the purchase.
               </i>
             </p>
           </div>
@@ -97,7 +97,7 @@ const Checkout = () => {
                   </div>
                 ) : (
                   <>
-                    Pay €9.95 now{" "}
+                    Pay $10.00 now{" "}
                     <i
                       className="fas fa-lock ms-2"
                       style={{ fontSize: 12 }}
